@@ -1,0 +1,36 @@
+   75  aws  ec2 describe-instances --filters Name=availability-zone,Values="us-west-2c”
+   76  aws  ec2 describe-instances --filters Name=availability-zone,Values="us-west-2c”
+   77  aws  ec2 describe-instances --filters Name=availability-zone,Values="us-west-2c”
+   78  aws  ec2 describe-instances --filters Name=availability-zone,Values="us-west-2c”
+   79  aws
+   80  aws ec2 describe-instances
+   81  aws  ec2 describe-instances --filters Name=availability-zone,Values="us-west-2c"
+   82  aws  ec2 describe-instances --filters Name=availability-zone,Values="us-west-2b"
+   83  aws  ec2 describe-instances --filters Name=availability-zone,Values="us-west-2b"
+   84  aws  ec2 describe-instances --filters Name=availability-zone,Values="us-west-2c"
+   85  aws  ec2 describe-instances --filters Name=availability-zone,Values="us-west-2c"
+   86  aws  ec2 describe-instances --filters Name=availability-zone,Values="us-west-2b"
+   87  aws ec2 describe-images --image-ids ami-c229c0a2
+   88  aws describe-vpcs --output text --query 'Vpcs[*].VpcId'
+   89  aws describe-vpcs --output text --query 'Vpcs[*].VpcId'
+   90  aws ec2 describe-key-pairs --query 'KeyPairs[*].KeyName'
+   91  aws ec2 describe-subnets --query 'Subnets[*].{SubnetId:SubnetId,AvailabilityZone:AvailabilityZone}’
+   92  aws ec2 describe-subnets --query 'Subnets[*].{SubnetId:SubnetId,AvailabilityZone:AvailabilityZone}'
+   93  ls -al
+   94  cd dev
+   95  ls
+   96  cd bootcamp/
+   97  pwd
+   98  vi install.tomcat.txt
+   99  aws ec2 create-security-group --group-name ssrinivasan-sec-grp --description "aws cli SecGrp - ssrinivasan" --vpc-id vpc-b425efd0
+  100  history
+  101  aws ec2 authorize-security-group-ingress --group-name ssrinivasan-sec-grp --protocol tcp --port 22 --cidr 199.16.140.28/32
+  102  ls
+  103  aws ec2 run-instances --image-id ami-c229c0a2--count 1 --user-data file://install.tomcat.txt --instance-type t2.micro --key-name ssrinivasan --security-group-ids sg-926547f5 --subnet-id subnet-d31f1c8a
+  104  history
+  105  aws ec2 run-instances --image-id ami-c229c0a2--count 1 --user-data file://install.tomcat.txt --instance-type t2.micro --key-name ssrinivasan --security-group-ids sg-926547f5 --subnet-id subnet-d31f1c8a
+  106  aws ec2 run-instances --image-id ami-c229c0a2--count 1 --user-data install.tomcat.txt --instance-type t2.micro --key-name ssrinivasan --security-group-ids sg-926547f5 --subnet-id subnet-d31f1c8a
+  107  aws ec2 run-instances --image-id ami-c229c0a2 --count 1 --user-data file://install.tomcat.txt --instance-type t2.micro --key-name ssrinivasan --security-group-ids sg-926547f5 --subnet-id subnet-d31f1c8a
+  108  git remote -v
+  109  ls -a
+  110  history
